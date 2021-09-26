@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://unpkg.com/vue@next"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Type things java assignment</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" v-model.lazy="message" placeholder="Type something">
+        <button @click="Magic">Show it</button>
+        <ol>
+            <li v-for="x in list">{{x.msg}}</li>
+        </ol>
+        <table class="table table-striped table-bordered" style="width: 30%">
+            <tbody>
+                <tr v-for="x in list">
+                    <td style="width: 60%;">{{x.num}}</td>
+                    <td>{{x.msg}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="Js/main.js"></script>
+</body>
+
+</html>
